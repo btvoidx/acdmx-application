@@ -1,4 +1,14 @@
 /* Write your global styles here, in PostCSS syntax */
+@import '@fontsource/nunito/400.css';
+
+#svelte {
+	color: white;
+	min-width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
