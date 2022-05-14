@@ -1,5 +1,6 @@
 /* Write your global styles here, in PostCSS syntax */
 @import '@fontsource/nunito/400.css';
+@import '@fontsource/nunito/500.css';
 
 #svelte {
 	color: white;

@@ -1,7 +1,9 @@
-<script context="module">
-	import Colored from '$lib/Colored.svelte';
+<script context="module" lang="ts">
+	import Hl from '$lib/Highlight.svelte';
 
 	export const prerender = true;
+	export const hydrate = false;
+	export const router = false;
 </script>
 
 <svelte:head>
@@ -10,47 +12,64 @@
 
 <div class="text">
 	<h1>Здравствуйте.</h1>
-	<p>Я Максим Тумозов, — школьник и программист-самоучка с замашкой на веб-разработчика.</p>
 	<p>
-		Понемногу занимаюсь веб-разработкой уже более двух лет. Начинал с <Colored c="#0769ad"
-			>jQuery</Colored
-		>, пару раз пробовал <Colored c="#61dafb">React</Colored> с <Colored c="#0070f3"
-			>Next.js</Colored
-		>, а затем влюбился в <Colored c="#ff3e00">Svelte</Colored> и <Colored c="#ff3e00"
-			>SvelteKit</Colored
-		>. Их и использую.
+		Я Максим Тумозов, — школьник, знаток английского и программист-самоучка. Понемногу занимаюсь
+		веб-разработкой уже более двух лет: начинал с <Hl c="#0769ad">jQuery</Hl>, пару раз пробовал
+		<Hl c="#61dafb">React</Hl>
+		с <Hl c="#0070f3">Next.js</Hl>, а затем влюбился в <Hl c="#ff3e00">Svelte</Hl> и
+		<Hl c="#ff3e00">SvelteKit</Hl>. Их и использую.
 	</p>
+	<h1>Мои проекты.</h1>
 	<p>
-		До моего увлечения веб-разработкой, я увлекался программированием в целом. Началось с
-		робототехники, а потом закрутилось: самостоятельно выучил на приемлимом уровне весь следующий
-		список языков. В порядке изучения: <Colored c="#35709f">Python</Colored>, <Colored c="#e9d54c"
-			>JavaScript</Colored
-		>, <Colored c="#9b4f97">C#</Colored>,
-		<Colored c="#007acc">TypeScript</Colored>, <Colored c="#69d7e4">Go</Colored>, <Colored
-			c="#0101ff">Lua</Colored
-		>.
+		Могу отметить лишь веб-сайт для игрового сервера <Hl c="#dc5b7b" href="https://terraria.tk"
+			>Terraria Minigames</Hl
+		>, поскольку из всего мной сделанного, только он всё ещё работает и публично доступен. Также уже
+		более полугода я работаю над собственным крупным проектом, который использует аж 4 разных языка
+		программирования: <Hl c="#35709f">Python</Hl>,
+		<Hl c="#9b4f97">C#</Hl>, <Hl c="#69d7e4">Go</Hl> и даже <Hl c="#0101dc">Lua</Hl>.
 	</p>
+	<h1>Мотивация.</h1>
 	<p>
-		Из собственных проектов могу отметить лишь <Colored c="#dc5b7b"
-			><a href="https://terraria.tk" target="_blank" rel="noopener noreferrer">terraria.tk</a
-			></Colored
-		>, поскольку только он всё ещё работает. Прямо сейчас я работаю над большим проектом, который
-		использует всё от <Colored c="#009485">FastAPI</Colored> с <Colored c="#35709f">Python</Colored>
-		до <Colored c="#9b4f97">C#</Colored> и <Colored c="#0101ff">Lua</Colored>.
+		Очень бы хотел попасть на курс разработчика на платформе <Hl
+			c="#1ec988"
+			href="https://acdmx.ru/">Академикс</Hl
+		> с надеждой получить важный опыт работы в команде, которого мне сейчас не хватает, и попрактиковаться
+		в своих навыках.
 	</p>
+	<p>— yours truly, Максим Тумозов.</p>
 </div>
+
+
+<footer>
+	<span>@btvoidx</span>
+	<a target="_blank" rel="noopener noreferrer" href="https://vk.com/btvoidx">VK</a>
+	<a target="_blank" rel="noopener noreferrer" href="https://github.com/btvoidx">GitHub</a>
+	<a target="_blank" rel="noopener noreferrer" href="mailto:maksimtumozov@gmail.com">E-mail</a>
+	<a target="_blank" rel="noopener noreferrer" href="https://github.com/btvoidx/acdmx-application"
+		>Этот сайт на GitHub</a
+	>
+</footer>
 
 <style lang="postcss">
 	.text {
-		@apply p-6 text-gray-100 w-full mx-auto;
-		@apply md:w-[85ch] md:mt-16;
+		@apply px-6 text-gray-100 w-full mx-auto mt-6;
+		@apply md:w-[75ch] md:mt-16;
 	}
 
 	h1 {
-		@apply text-4xl mb-6;
+		@apply text-3xl mb-2 font-medium;
 	}
 
 	p {
-		@apply text-2xl mb-4 leading-7;
+		@apply text-2xl mb-6 leading-7 font-normal tracking-[-0.02em];
+	}
+
+	footer {
+		@apply px-6 text-gray-300 w-full mx-auto flex gap-x-4 mt-14;
+		@apply md:w-[75ch];
+	}
+
+	footer > a:last-child {
+		@apply ml-auto;
 	}
 </style>
