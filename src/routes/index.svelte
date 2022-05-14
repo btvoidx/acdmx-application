@@ -49,7 +49,7 @@
 	<a target="_blank" rel="noopener noreferrer" href="https://github.com/btvoidx">GitHub</a>
 	<a target="_blank" rel="noopener noreferrer" href="mailto:maksimtumozov@gmail.com">E-mail</a>
 	<a target="_blank" rel="noopener noreferrer" href="https://github.com/btvoidx/acdmx-application"
-		>Этот сайт на GitHub</a
+		>Код сайта</a
 	>
 </footer>
 
