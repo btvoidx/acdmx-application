@@ -68,7 +68,7 @@
 	}
 
 	footer {
-		@apply px-6 text-gray-300 w-full mx-auto flex gap-x-4 mt-14;
+		@apply px-6 text-gray-300 w-full mx-auto flex gap-x-4 mt-14 mb-6;
 		@apply md:w-[75ch];
 	}
 
