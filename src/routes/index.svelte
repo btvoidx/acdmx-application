@@ -4,6 +4,10 @@
 	export const prerender = true;
 </script>
 
+<svelte:head>
+	<title>Академикс | Максим Тумозов</title>
+</svelte:head>
+
 <div class="text">
 	<h1>Здравствуйте.</h1>
 	<p>Я Максим Тумозов, — школьник и программист-самоучка с замашкой на веб-разработчика.</p>
