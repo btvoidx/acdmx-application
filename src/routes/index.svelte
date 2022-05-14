@@ -1,5 +1,6 @@
 <script context="module" lang="ts">
 	import Hl from '$lib/Highlight.svelte';
+	import Dots from '$lib/Dots.svelte';
 
 	export const prerender = true;
 	export const hydrate = false;
@@ -39,6 +40,8 @@
 	<p>— yours truly, Максим Тумозов.</p>
 </div>
 
+<Dots w={25} h={30} x="22vw" y="2vh" color="#113" />
+<Dots w={20} h={15} x="52vw" y="58vh" color="#210c30" />
 
 <footer>
 	<span>@btvoidx</span>

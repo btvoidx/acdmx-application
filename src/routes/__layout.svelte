@@ -8,7 +8,7 @@
 
 <style lang="postcss">
 	main {
-		@apply w-screen h-screen overflow-hidden;
-		@apply bg-gradient-to-br from-[#030407] to-[#0e030e];
+		@apply w-screen h-screen z-0;
+		@apply bg-gradient-to-br to-[#030407] from-[#0a020a];
 	}
 </style>
